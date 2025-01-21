@@ -1,5 +1,5 @@
 
-package javaapplication1;
+package inheritanceandpolymorphism;
 class Jaggu {
     void banana(){        
         System.out.println("Hello im jaggu ");
