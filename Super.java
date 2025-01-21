@@ -27,7 +27,7 @@ class child extends parent{
     }
 }
 
-public class Oops {
+public class Super {
     public static void main(String[] args){
 //        c x = new c();
 
