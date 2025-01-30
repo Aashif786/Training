@@ -5,7 +5,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.DriverManager;
-
+import java.sql.Statement;
+import java.sql.ResultSetMetaData;
 public class Sqljava {
 	public static Scanner sc ;
 	static int ch;
@@ -18,7 +19,8 @@ public class Sqljava {
             System.out.println("3. Modify");
             System.out.println("4. Display");
             System.out.println("5. Delete");
-            System.out.println("6. Exit");
+            System.out.println("6. Write Query");
+            System.out.println("7. Exit");
             System.out.print("Enter your choice : ");
             sc = new Scanner(System.in);
             ch = sc.nextInt();
@@ -39,12 +41,15 @@ public class Sqljava {
                     a.delete(sc);
                     break;
                 case 6:
+                	a.queries(sc);
+                case 7:
                     System.out.println("Exiting...");
                     break;
                 default:
                     System.out.println("Invalid choice. Please choose a valid option.");
+                    break;
             }
-        } while (ch <= 6);
+        } while (true);
     }
     static Connection connect() throws SQLException {
         try {
@@ -108,18 +113,52 @@ public class Sqljava {
 				System.out.println("ID  :"+rs.getInt(1)+", Name: "+rs.getString(2)+", Age : "+rs.getInt(3));
 			}rs.close();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		finally{c.close();}
     }
     void update(Scanner sc) throws SQLException {
     	System.out.println();
-    	Connection c= connect();
-		PreparedStatement p = c.prepareStatement("update list set ");
+    	Connection c= connect(); 
+    	System.out.println("Enter ID:");
+    	int id = sc.nextInt();sc.nextLine();
+    	System.out.println("Enter new name:");
+    	String name = sc.nextLine();
+		PreparedStatement p = c.prepareStatement("update list set  name =? where id = ? ");
+		p.setString(1, name);
+		p.setInt(2, id);
     }
     void delete(Scanner sc) throws SQLException {
     	System.out.println();
+    }
+    void queries(Scanner sc) throws SQLException {
+    	sc.nextLine();
+    	Connection c= connect(); 
+    	System.out.println("Welcome to MySQL shell ");
+    	System.out.println("Note: Only execute select queries...");
+    	while (true) {    		
+    		System.out.print("mysql> ");sc.nextLine();
+    		String query = sc.nextLine();
+    		if(query.equalsIgnoreCase("exit"))
+			System.out.println();
+    		Statement p = c.createStatement();
+    		ResultSet rs = p.executeQuery(query);
+    		while(rs.next()) {
+                ResultSetMetaData md = rs.getMetaData();
+                int column = md.getColumnCount();
+                for (int i = 1; i <= column; i++) {
+                    System.out.print(md.getColumnName(i) + "\t");
+                }
+                System.out.println();
+                while (rs.next()) {
+                    for (int i = 1; i <= column; i++) {
+                        System.out.print(rs.getString(i) + "\t");
+                    }
+                    System.out.println();
+                }
+                System.out.println();
+    		}
+    	}
     }
 
 }
