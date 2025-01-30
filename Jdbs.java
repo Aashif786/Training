@@ -27,7 +27,7 @@ public class Jdbs {
             System.out.println("6. Exit");
             System.out.print("Enter your choice : ");
             ch = sc.nextInt();
-            sc.nextLine(); // Consume newline left-over
+            sc.nextLine();
 
             switch (ch) {
                 case 1:
