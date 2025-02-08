@@ -1,10 +1,12 @@
-package adjava;
+
 
 import java.util.*;
 
 public class Bookhash {
+    @SuppressWarnings("unchecked")
     public static void main(String[]args){
-       HashMap m = new HashMap();
+       @SuppressWarnings("rawtypes")
+    HashMap m = new HashMap();
         m.put("Bridge to Terabithia",1600);
         m.put("Harry Potter: The Sorcerer's Stone",1200);
         m.put("Harry Potter: Half Blood Prince",1650);
@@ -14,10 +16,13 @@ public class Bookhash {
         m.put("Harry Potter: The Cursed Child",1200);
         System.out.println(m);
 
+        @SuppressWarnings("rawtypes")
         Set mm = m.entrySet();
+        @SuppressWarnings("rawtypes")
         Iterator it = mm.iterator();
         while(it.hasNext()) System.out.println(it.next());
         while(it.hasNext()){
+            @SuppressWarnings("rawtypes")
             Map.Entry mp = (Map.Entry)it.next();
             if(mp.getKey().equals("Bridge to Terabithia")) mp.setValue(2150);
             if(mp.getValue().equals(2000)) mp.setValue(2150);
@@ -26,8 +31,10 @@ public class Bookhash {
         }
         System.out.println(m);
         
-        for (Iterator i = mm.iterator(); i.hasNext();) {
-			Map.Entry ent = (Map.Entry)i.next();
+        for (@SuppressWarnings("rawtypes")
+        Iterator i = mm.iterator(); i.hasNext();) {
+			@SuppressWarnings("rawtypes")
+            Map.Entry ent = (Map.Entry)i.next();
 	        System.out.println(ent);
 
 		}

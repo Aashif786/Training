@@ -1,7 +1,6 @@
-package src;
 
 class Table {
-     void printTable(int n) {
+    void printTable(int n) {
         for (int i = 1; i <= 5; i++) {
             System.out.println(n * i);
             try {
@@ -26,9 +25,10 @@ class MyThread extends Thread {
         t.printTable(num);
     }
 }
+
 public class ThreadSync {
     public static void main(String args[]) {
-        Table obj = new Table();  // One object for both threads
+        Table obj = new Table(); // One object for both threads
         MyThread t1 = new MyThread(obj, 5);
         MyThread t2 = new MyThread(obj, 100);
         t1.start();

@@ -1,11 +1,9 @@
-package adjava;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 import java.sql.DriverManager;
 import java.sql.*;
-import java.util.Scanner;
 
 public class Jdbs {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
@@ -120,7 +118,8 @@ public class Jdbs {
             columnNames.deleteCharAt(columnNames.length() - 1);
             columnValues.deleteCharAt(columnValues.length() - 1);
 
-            PreparedStatement pstmt = c.prepareStatement("insert into " + tableName + " (" + columnNames.toString() + ") values (" + columnValues.toString() + ")");
+            PreparedStatement pstmt = c.prepareStatement("insert into " + tableName + " (" + columnNames.toString()
+                    + ") values (" + columnValues.toString() + ")");
             pstmt.executeUpdate();
 
             System.out.println("Record inserted successfully.");
@@ -129,6 +128,7 @@ public class Jdbs {
         }
     }
 
+    @SuppressWarnings("unused")
     private static void modifyRecord(Scanner sc) {
         try {
             Connection c = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/a", "root", "a");

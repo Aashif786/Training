@@ -1,4 +1,4 @@
-public class Main// Bubble sort
+public class Bubblesort
 {
 	public static void main(String[] args) {
 		int arr[]=new int[]{45,78,1,-3,0,56,66,42,89,65};

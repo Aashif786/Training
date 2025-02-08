@@ -1,3 +1,4 @@
+/*
 public class Exception1 {
     public static void main(String[] args) {
         try {
@@ -11,25 +12,24 @@ public class Exception1 {
         }
     }
 }
-
+*/
 
 //Userdefined or Custom
-class CustomException extends Exception {
-    public CustomException(String messa
+
 class CustomException extends Exception {
     public CustomException(String message) {
         super(message);
     }
 }
+
 public class Exception1 {
     public static void main(String[] args) {
         try {
             int age = 16;
-            if (age < 18) 
-            	throw new CustomException("Age must be 18 or older.");
+            if (age < 18)
+                throw new CustomException("Age must be 18 or older.");
             System.out.println("Age is valid: " + age);
-        } 
-        catch (CustomException e) {
+        } catch (CustomException e) {
             System.out.println("Caught Exception: " + e.getMessage());
         }
     }
