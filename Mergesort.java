@@ -18,28 +18,19 @@ public class Mergesort {
 			arr1[i] = arr[low + i];
 		for (int j = 0; j < n2; j++)
 			arr2[j] = arr[j + mid + 1];
+
 		int i = 0, j = 0, s = low;
+
 		while (i < n1 && j < n2) {
-			if (arr1[i] <= arr2[j]) {
-				arr[s] = arr1[i];
-				s++;
-				i++;
-			} else {
-				arr[s] = arr2[j];
-				s++;
-				j++;
-			}
+			if (arr1[i] <= arr2[j])
+				arr[s++] = arr1[i++];
+			else
+				arr[s++] = arr2[j++];
 		}
-		while (i < n1) {
-			arr[s] = arr1[i];
-			s++;
-			i++;
-		}
-		while (j < n2) {
-			arr[s] = arr2[j];
-			s++;
-			j++;
-		}
+		while (i < n1)
+			arr[s++] = arr1[i++];
+		while (j < n2)
+			arr[s++] = arr2[j++];
 	}
 
 	static void sort(int low, int high, int arr[]) {
