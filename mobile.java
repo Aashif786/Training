@@ -1,4 +1,3 @@
-package adjava;
 
 import java.util.regex.Pattern;
 
