@@ -77,4 +77,15 @@ class Tree {
             System.out.print(root.data + " ");
         }
     }
+
+    void levelordertraversal(int level, Node root) {
+        if (root != null)
+            return;
+        if (level == 0)
+            System.out.print(root.data + " ");
+        else if (level > 0) {
+            levelordertraversal(level - 1, root.left);
+            levelordertraversal(level - 1, root.right);
+        }
+    }
 }
