@@ -78,6 +78,7 @@ class Tree {
         }
     }
 
+    @SuppressWarnings("null")
     void levelordertraversal(int level, Node root) {
         if (root != null)
             return;
