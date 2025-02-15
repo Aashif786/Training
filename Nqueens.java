@@ -8,15 +8,10 @@ public class Nqueens {
         Scanner s = new Scanner(System.in);
         n = s.nextInt();
         board = new int[n][n];
-        if (queen(0)) { // 0 = column no upto 3(since n = 4)
-            for (int i = 0; i < board.length; i++, System.out.println()) {
-                for (int j = 0; j < board.length; j++) {
-                    System.out.print(board[i][j] + " ");
-                }
-            }
-        } else {
+        if (queen(0))
+            printboard(); // 0 = column no upto 3(since n = 4)
+        else
             System.out.println("No Solution");
-        }
         s.close();
     }
 
@@ -29,7 +24,7 @@ public class Nqueens {
             if (board[i][j] == 1)
                 return false;
 
-        for (int i = r + 1, j = c - 1; j >= 0 && i < n; i--, j--)
+        for (int i = r + 1, j = c - 1; j >= 0 && i < n; i++, j--)
             if (board[i][j] == 1)
                 return false;
 
@@ -49,6 +44,14 @@ public class Nqueens {
                 }
             }
             return false;
+        }
+    }
+
+    static void printboard() {
+        for (int i = 0; i < board.length; i++, System.out.println()) {
+            for (int j = 0; j < board.length; j++) {
+                System.out.print(board[i][j] + " ");
+            }
         }
     }
 }
