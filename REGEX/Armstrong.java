@@ -26,8 +26,4 @@ public class Armstrong {
         return sum == n;
     }
 
-    public String age(int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'age'");
-    }
 }
