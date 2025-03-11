@@ -1,23 +1,19 @@
+package INTERVIEWQUESTIONS;
+
 import java.util.*;
 
 public class arrayshift {
     public static void main(String[] args) {
-        int[] a = { 1, 2, 3, 4, 5, 6 };
-        int k = 3;
+        Scanner sc = new Scanner(System.in);
+
+        int[] a = Arrays.stream(sc.nextLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int k = sc.nextInt();
         int n = a.length;
+        k = k % n;
         reverse(a, 0, n - 1);
         reverse(a, 0, k - 1);
         reverse(a, k, n - 1);
-        // List<Integer> l = new ArrayList<>();
-        // for (int i = k; i < a.length; i++) {
-        // l.add(a[i]);
-        // }
-        // for (int i = 0; i < k; i++) {
-        // l.add(a[i]);
-        // }
-        // for (int i : l) {
-        // System.out.print(i + " ");
-        // }
+
         for (int i : a) {
             System.out.print(i + " ");
         }
@@ -32,5 +28,4 @@ public class arrayshift {
             end--;
         }
     }
-
 }
