@@ -1,25 +1,81 @@
-body{
+
+
+:root {
+    --primary-color: #ff6b6b;
+    --secondary-color: #4ecdc4;
+    --dark-color: #292f36;
+    --light-color: #f7fff7;
+}
+
+body {
+    font-family: 'Avenir', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--dark-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--primary-color);
     color: white;
-    background-color: #240000;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    padding: 6rem 2rem;
 }
 
-header ul{
-    display: flex;
-    justify-content: space-around;
-    
+h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    font-weight: 800;
 }
 
-h3{
-    padding: 16px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-header ul li{
-    padding: 20px;
+.section {
+    padding: 4rem 0;
 }
 
-header{
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary-color);
+}
+
+.current-projects {
+    background-color: var(--light-color);
+}
+
+.values {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.value-card {
+    background: linear-gradient(#46568a,#40338a);
+
+    backdrop-filter: blur(10px);
+}
+
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 2rem;
 }
