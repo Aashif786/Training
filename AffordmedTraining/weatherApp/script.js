@@ -1,8 +1,6 @@
 function fetchdata() {
             const city = document.getElementById("input").value;
-            const api = import.meta.env.VITE_WEATHER_API_KEY;
-
-            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=&{apikey}&units=metric`;
+            const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=1da549d08e51c87207fd29751f55cf10&units=metric`;
 
             fetch(url)
                 .then(response => {
