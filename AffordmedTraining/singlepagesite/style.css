@@ -1,7 +1,47 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+
+}
+
+.container
+{
+    width: 200 px;
 }
 
 ul{
-    
+    list-style: none;
+}
+nav ul{
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    all:unset;
+    color: #fff;
+}
+table{
+    text-align: justify;
+}
+
+#skills li{
+    padding: 20px;
+}
+
+td,th{
+    padding: 10px;
+}
+
+#footer
+{
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
 }
