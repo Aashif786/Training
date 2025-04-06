@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Training/static/css/main.13c460ff.css",
-    "main.js": "/Training/static/js/main.f46d3b63.js",
-    "static/media/bootstrap-icons.woff?": "/Training/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/Training/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "index.html": "/Training/index.html",
-    "main.13c460ff.css.map": "/Training/static/css/main.13c460ff.css.map",
-    "main.f46d3b63.js.map": "/Training/static/js/main.f46d3b63.js.map"
+    "main.css": "/Training/AffordmedTraining/react-app/static/css/main.c819c088.css",
+    "main.js": "/Training/AffordmedTraining/react-app/static/js/main.f46d3b63.js",
+    "static/media/bootstrap-icons.woff?": "/Training/AffordmedTraining/react-app/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/Training/AffordmedTraining/react-app/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "index.html": "/Training/AffordmedTraining/react-app/index.html",
+    "main.c819c088.css.map": "/Training/AffordmedTraining/react-app/static/css/main.c819c088.css.map",
+    "main.f46d3b63.js.map": "/Training/AffordmedTraining/react-app/static/js/main.f46d3b63.js.map"
   },
   "entrypoints": [
-    "static/css/main.13c460ff.css",
+    "static/css/main.c819c088.css",
     "static/js/main.f46d3b63.js"
   ]
 }
