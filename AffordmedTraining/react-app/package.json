@@ -1,5 +1,5 @@
 {
-  "homepage": "http://Aashif786.github.io/Training",
+  "homepage": ".",
   "name": "react-app",
   "version": "0.1.0",
   "private": true,
@@ -26,6 +26,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
