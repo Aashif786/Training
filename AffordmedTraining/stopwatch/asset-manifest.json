@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/Training/AffordmedTraining/stopwatch/static/js/main.cb9ef4c2.js",
+    "index.html": "/Training/AffordmedTraining/stopwatch/index.html",
+    "main.cb9ef4c2.js.map": "/Training/AffordmedTraining/stopwatch/static/js/main.cb9ef4c2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cb9ef4c2.js"
+  ]
+}

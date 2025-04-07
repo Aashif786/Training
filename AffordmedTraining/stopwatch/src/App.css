@@ -1,0 +1,84 @@
+.stopwatch-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.time-display {
+  font-family: 'Courier New', monospace;
+  font-size: 3rem;
+  margin: 20px 0;
+  color: #00ffaa;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:first-child {
+  background-color: #00aa77;
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #008855;
+}
+
+button:nth-child(2) {
+  background-color: #aa3300;
+  color: white;
+}
+
+button:nth-child(2):hover {
+  background-color: #882200;
+}
+
+button:last-child {
+  background-color: #3333aa;
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #222288;
+}
+
+button:disabled {
+  background-color: #444444;
+  cursor: not-allowed;
+}
+
+.laps {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #2a2a2a;
+  border-radius: 10px;
+}
+
+.laps ul {
+  list-style: none;
+  padding: 0;
+}
+
+.laps li {
+  padding: 8px 0;
+  border-bottom: 1px solid #444;
+}
+
+.laps li:last-child {
+  border-bottom: none;
+}
