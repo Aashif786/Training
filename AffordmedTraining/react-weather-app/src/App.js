@@ -5,7 +5,7 @@ import WeatherApp from './WeatherApp';
 
 const App = () => {
   return (
-    <Router basename="/Training/AffordmedTraining/react-weather-app">
+    <Router basename="/AffordmedTraining/react-weather-app">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/weather" element={<WeatherApp />} />
