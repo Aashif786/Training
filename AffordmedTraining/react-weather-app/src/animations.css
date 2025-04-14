@@ -1,0 +1,48 @@
+/* Shapeshifting animations */
+@keyframes morph {
+  0% { border-radius: 20px; }
+  50% { border-radius: 50px; }
+  100% { border-radius: 20px; }
+}
+
+@keyframes colorShift {
+  0% { background-color: #f8f9fa; }
+  50% { background-color: #e9ecef; }
+  100% { background-color: #f8f9fa; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Component transitions */
+.login-card {
+  animation: morph 8s infinite ease-in-out, 
+             colorShift 12s infinite ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-input {
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(108, 117, 125, 0.3);
+}
+
+.btn-morph {
+  animation: float 4s infinite ease-in-out;
+  transition: all 0.3s ease;
+}
+
+.btn-morph:hover {
+  transform: scale(1.1) translateY(-5px);
+}
