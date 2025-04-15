@@ -7,14 +7,14 @@ public class SumOfRange {
         int n = arr.length;
         int low = 0 , high = n-1;
         SegmentTree tree = new SegmentTree(arr);
-        tree.build(low, high, arr)
+        tree.build(low, high, arr);
     }
-    
     static int segmenttree(){
         return 0;
     }
 }
 
+@SuppressWarnings("unused")
 class SegmentTree {
 
         private int [] tree;
@@ -22,6 +22,8 @@ class SegmentTree {
         public SegmentTree(int arr[]){
             int n = arr.length;
             tree = new int[4*n];
-            
+        }
+        void build(int low, int high, int arr[]){
+
         }
 }
