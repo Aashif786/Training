@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Training/AffordmedTraining/react-weather-app/static/css/main.f4b3839b.css",
+    "main.js": "/Training/AffordmedTraining/react-weather-app/static/js/main.983a4572.js",
+    "index.html": "/Training/AffordmedTraining/react-weather-app/index.html",
+    "main.f4b3839b.css.map": "/Training/AffordmedTraining/react-weather-app/static/css/main.f4b3839b.css.map",
+    "main.983a4572.js.map": "/Training/AffordmedTraining/react-weather-app/static/js/main.983a4572.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4b3839b.css",
+    "static/js/main.983a4572.js"
+  ]
+}
