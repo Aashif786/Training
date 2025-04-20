@@ -1,14 +1,8 @@
 public class SegmentTree {
-
-    @SuppressWarnings("unused")
+    static int querySegment = 0;
     public static void main(String[] args) {
-        int[] arr = {4,7,2,8,1,9,3};
-        int n = arr.length;
-        int low = 0 , high = n-1;
-        System.out.println(segmenttree());
+        int [] a = {9,1,5 ,2,6,8};
+        int n = a.length;
     }
 
-    static int segmenttree(){
-        return 1;
-    }
 }
