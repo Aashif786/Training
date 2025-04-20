@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Aashif Shadin",
+    "department": "AI & DS",
+    "year": "3rd Year",
+    "grade": "A",
+    "phone": "123-456-7890"
+  },
+  {
+    "id": 2,
+    "name": "Anjali R",
+    "department": "CSE",
+    "year": "2nd Year",
+    "grade": "B+",
+    "phone": "234-567-8901"
+  },
+  {
+    "id": 3,
+    "name": "Rahul V",
+    "department": "ECE",
+    "year": "1st Year",
+    "grade": "A-",
+    "phone": "345-678-9012"
+  },
+  {
+    "id": 4,
+    "name": "Sneha K",
+    "department": "IT",
+    "year": "3rd Year",
+    "grade": "B",
+    "phone": "456-789-0123"
+  },
+  {
+    "id": 5,
+    "name": "Manoj S",
+    "department": "EEE",
+    "year": "2nd Year",
+    "grade": "A+",
+    "phone": "567-890-1234"
+  },
+  {
+    "id": 6,
+    "name": "Priya M",
+    "department": "CSE",
+    "year": "1st Year",
+    "grade": "A",
+    "phone": "678-901-2345"
+  },
+  {
+    "id": 7,
+    "name": "Karan T",
+    "department": "ECE",
+    "year": "2nd Year",
+    "grade": "B+",
+    "phone": "789-012-3456"
+  },
+  {
+    "id": 8,
+    "name": "Divya S",
+    "department": "IT",
+    "year": "3rd Year",
+    "grade": "A-",
+    "phone": "890-123-4567"
+  },
+  {
+    "id": 9,
+    "name": "Rohit K",
+    "department": "EEE",
+    "year": "1st Year",
+    "grade": "B",
+    "phone": "901-234-5678"
+  },
+  {
+    "id": 10,
+    "name": "Neha P",
+    "department": "AI & DS",
+    "year": "2nd Year",
+    "grade": "A+",
+    "phone": "012-345-6789"
+  },
+  {
+    "id": 11,
+    "name": "Suresh L",
+    "department": "CSE",
+    "year": "3rd Year",
+    "grade": "A",
+    "phone": "123-456-7891"
+  },
+  {
+    "id": 12,
+    "name": "Anita R",
+    "department": "ECE",
+    "year": "2nd Year",
+    "grade": "B+",
+    "phone": "234-567-8902"
+  },
+  {
+    "id": 13,
+    "name": "Vikram S",
+    "department": "IT",
+    "year": "1st Year",
+    "grade": "A-",
+    "phone": "345-678-9013"
+  },
+  {
+    "id": 14,
+    "name": "Meena K",
+    "department": "EEE",
+    "year": "3rd Year",
+    "grade": "B",
+    "phone": "456-789-0124"
+  },
+  {
+    "id": 15,
+    "name": "Arjun M",
+    "department": "AI & DS",
+    "year": "2nd Year",
+    "grade": "A+",
+    "phone": "567-890-1235"
+  }
+]

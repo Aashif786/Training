@@ -1,23 +1,133 @@
+/* General app styling */
 .App {
-  text-align: center;
-  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
   padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  color: #333;
 }
 
-input {
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  width: 50%;
+/* Heading */
+h1 {
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
-ul {
-  list-style-type: none;
+/* Search input */
+.search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #357ABD;
+  box-shadow: 0 0 8px rgba(53, 122, 189, 0.5);
+}
+
+/* Student list */
+.student-list {
+  list-style: none;
   padding: 0;
+  margin: 0;
 }
 
-li {
-  margin: 0.5rem 0;
-  padding: 0.5rem;
-  background-color: #f2f2f2;
-  border-radius: 5px;
+/* Student item */
+.student-item {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(74, 144, 226, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  animation: fadeInUp 0.5s ease forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.student-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(74, 144, 226, 0.3);
+}
+
+/* Animate list items on mount */
+.student-item:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.student-item:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.student-item:nth-child(3) {
+  animation-delay: 0.15s;
+}
+.student-item:nth-child(4) {
+  animation-delay: 0.2s;
+}
+.student-item:nth-child(5) {
+  animation-delay: 0.25s;
+}
+.student-item:nth-child(6) {
+  animation-delay: 0.3s;
+}
+.student-item:nth-child(7) {
+  animation-delay: 0.35s;
+}
+.student-item:nth-child(8) {
+  animation-delay: 0.4s;
+}
+.student-item:nth-child(9) {
+  animation-delay: 0.45s;
+}
+.student-item:nth-child(10) {
+  animation-delay: 0.5s;
+}
+.student-item:nth-child(11) {
+  animation-delay: 0.55s;
+}
+.student-item:nth-child(12) {
+  animation-delay: 0.6s;
+}
+.student-item:nth-child(13) {
+  animation-delay: 0.65s;
+}
+.student-item:nth-child(14) {
+  animation-delay: 0.7s;
+}
+.student-item:nth-child(15) {
+  animation-delay: 0.75s;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Student details */
+.student-name {
+  margin: 0 0 0.25rem 0;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.student-grade,
+.student-phone {
+  margin: 0;
+  color: #555;
+  font-size: 1rem;
 }

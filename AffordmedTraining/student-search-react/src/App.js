@@ -1,15 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import studentsData from './students.json';
 
 function App() {
-  const [students, setStudents] = useState([]);
+  const [students] = useState(studentsData);
   const [searchTerm, setSearchTerm] = useState('');
-
-  useEffect(() => {
-    fetch('/students.json')
-      .then(res => res.json())
-      .then(data => setStudents(data));
-  }, []);
 
   const filteredStudents = students.filter(student =>
     student.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -22,11 +17,14 @@ function App() {
         type="text"
         placeholder="Search by name..."
         onChange={e => setSearchTerm(e.target.value)}
+        className="search-input"
       />
-      <ul>
+      <ul className="student-list">
         {filteredStudents.map(student => (
-          <li key={student.id}>
-            {student.name} - {student.department} ({student.year})
+          <li key={student.id} className="student-item">
+            <h3 className="student-name">{student.name}</h3>
+            <p className="student-grade">Grade: {student.grade}</p>
+            <p className="student-phone">Phone: {student.phone}</p>
           </li>
         ))}
       </ul>
