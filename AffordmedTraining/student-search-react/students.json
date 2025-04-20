@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Aashif Shadin",
+    "department": "AI & DS",
+    "year": "3rd Year"
+  },
+  {
+    "id": 2,
+    "name": "Anjali R",
+    "department": "CSE",
+    "year": "2nd Year"
+  },
+  {
+    "id": 3,
+    "name": "Rahul V",
+    "department": "ECE",
+    "year": "1st Year"
+  },
+  {
+    "id": 4,
+    "name": "Sneha K",
+    "department": "IT",
+    "year": "3rd Year"
+  },
+  {
+    "id": 5,
+    "name": "Manoj S",
+    "department": "EEE",
+    "year": "2nd Year"
+  }
+]
